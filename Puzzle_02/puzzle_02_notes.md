@@ -1,6 +1,7 @@
 # Advent of Code - Puzzle 02 notes
 
-[Official link](https://adventofcode.com/2022/day/2)
+[Official link](https://adventofcode.com/2022/day/2)  
+[main readme](..\readme.md)
 
 ## Part 1
 
