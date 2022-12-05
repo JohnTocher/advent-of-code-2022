@@ -4,7 +4,7 @@
 [Main page](../readme.md)
 
 ## Part 1
-[my solution](puzzle_01-part1_jmt.py)
+[my solution])(puzzle_01-part_1_jmt.py)
 
 This is a straightwforward exercise in reading some text from a long list in a file.
 There are 2224 lines, and there is only one piece of information on each line, and its a number made ip of 1-5 digits
@@ -15,7 +15,7 @@ We treat the blank lines as our cue to see if the current "total" is bigger than
 ```python puzzle_01-part_1_jmt.py```
 
 ## Part 2
-[my solution](puzzle_01-part2_jmt.py)
+[my solution](puzzle_01-part_2_jmt.py)
 
 This part requires us to find the top three totals, so we can no longer keep a single total.
 Here we introduce the idea of a list.  Python lists can contain all sorts of things, here they will just be integers.
