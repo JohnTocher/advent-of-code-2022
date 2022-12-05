@@ -4,7 +4,8 @@
 
 ## Part 1
 
-[my solution](puzzle_02-part_1_jmt.py)
+[my solution](puzzle_02-part_1_jmt.py)  
+
 Here we again read a text file as input.  
 This time there are two pieces of information on each line, separated by spaces.  
 We use the split() function to generate a lits of items from a source with a particular separator.  
@@ -21,7 +22,7 @@ Run with:
 
 ## Part 2
 
-[my solution](puzzle_02-part_2_jmt.py)
+[my solution](puzzle_02-part_2_jmt.py)  
 
 Now the rules have changed, such that the scond column no longer describes the players choice, but rather the desired outcome.
 The code structure really doesn't change much, only now we pick the players choice to get the desired game outcome.
@@ -32,7 +33,6 @@ Run with:
 ## Gotchas
 
 I've used pure "if" statements rather than if and elif (else-if) here, just for aesthetics.  It's not a problem in this case, although it does result in all "if" statements being tested regardless of which one matches.  More on this later. 
-
 
 # Raw text from web site
 
