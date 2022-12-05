@@ -4,10 +4,12 @@
 
 ## Part 1
 
-Here we again read a text file as input.
-This time there are two pieces of information on each line, separated by spaces.
-We use the split() function to generate a lits of items from a source with a particular separator.  In this case we are explicitly saying the separator is a space.
-We then have some logic to perform the scoring as per the challenge.
+[my solution](puzzle_02-part_1_jmt.py)
+Here we again read a text file as input.  
+This time there are two pieces of information on each line, separated by spaces.  
+We use the split() function to generate a lits of items from a source with a particular separator.  
+In this case we are explicitly saying the separator is a space.  
+We then have some logic to perform the scoring as per the challenge.  
 There's not too much to explain here, but I've delibrately left some obvious addition in to help understand the rules, which could be optimised later.  That is, writing:
 
 ```this_score = 1 + 3      # draw```
@@ -18,6 +20,8 @@ Run with:
 ```python puzzle_02-part_1_jmt.py```
 
 ## Part 2
+
+[my solution](puzzle_02-part_2_jmt.py)
 
 Now the rules have changed, such that the scond column no longer describes the players choice, but rather the desired outcome.
 The code structure really doesn't change much, only now we pick the players choice to get the desired game outcome.
