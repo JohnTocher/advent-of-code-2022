@@ -16,8 +16,9 @@ This is not meant to be a showcase of the most ingenious, elegant or correct sol
 
 ## What you need
 
-[Python 3](https://www.python.org/downloads/), pretty much any version beyond 3.6.  If you're on linux (ubuntu, or a raspberry pi), the command to run the scripts will probably be ```python3 filename.py``` rather than ```python filename.py```  
-You're favourite text editor.  I usually use [VS Code](https://code.visualstudio.com/download), but you can use whatever you prefer.  
+- [Python 3](https://www.python.org/downloads/), pretty much any version beyond 3.6.  If you're on linux (ubuntu, or a raspberry pi), the command to run the scripts will probably be ```python3 filename.py``` rather than ```python filename.py```  
+- Your favourite text editor.  I usually use [VS Code](https://code.visualstudio.com/download), but you can use whatever you prefer. 
+*Note:* You probably *can't* do this on a vanilla SOE box, although if you really want to, come and see me and we can sort that out too.  Getting python to run pretty much anywhere else should be straightforward, but again reach out if you run into any grief.
 
 John Tocher
 December 2022
