@@ -21,7 +21,7 @@ This is not meant to be a showcase of the most ingenious, elegant or correct sol
 
 *Note:* You probably *can't* do this on a vanilla SOE box, although if you really want to, come and see me and we can sort that out too.  Getting python to run pretty much anywhere else should be straightforward, but again reach out if you run into any grief.
 
-John Tocher
+John Tocher  
 December 2022
 
 ## Puzzle notes pages
