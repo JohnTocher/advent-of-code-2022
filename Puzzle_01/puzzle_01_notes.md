@@ -4,7 +4,7 @@
 [Main page](../readme.md)
 
 ## Part 1
-[my solution])(puzzle_01-part_1_jmt.py)
+[my solution](puzzle_01-part_1_jmt.py)
 
 This is a straightwforward exercise in reading some text from a long list in a file.
 There are 2224 lines, and there is only one piece of information on each line, and its a number made ip of 1-5 digits
