@@ -24,8 +24,6 @@ Sets an contain various items, but each element of a set must be unique.  If you
 
 [my solution](puzzle_03-part_2_jmt.py)  
 
-TBA
-
 Run with:  
 ```python puzzle_03-part_2_jmt.py```
 
