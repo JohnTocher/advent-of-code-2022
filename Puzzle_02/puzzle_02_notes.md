@@ -17,7 +17,7 @@ There's not too much to explain here, but I've delibrately left some obvious add
 
 is a little redundant, we could have just put in 4 directly. I left it in for now to better illustrate which lines of code correspond to which rules.
 
-Run with:
+Run with:  
 ```python puzzle_02-part_1_jmt.py```
 
 ## Part 2
@@ -27,7 +27,7 @@ Run with:
 Now the rules have changed, such that the scond column no longer describes the players choice, but rather the desired outcome.
 The code structure really doesn't change much, only now we pick the players choice to get the desired game outcome.
 
-Run with:
+Run with:  
 ```python puzzle_02-part_2_jmt.py```
 
 ## Gotchas
