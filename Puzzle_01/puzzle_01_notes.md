@@ -6,32 +6,32 @@
 ## Part 1
 [my solution](puzzle_01-part_1_jmt.py)
 
-This is a straightwforward exercise in reading some text from a long list in a file.
-There are 2224 lines, and there is only one piece of information on each line, and its a number made ip of 1-5 digits
-We read each line, and add it the total for the current elf
-There are blank lines separating the groups of numbers belonging to each elf
-We treat the blank lines as our cue to see if the current "total" is bigger than any we've seen before
+This is a straightwforward exercise in reading some text from a long list in a file. 
+There are 2224 lines, and there is only one piece of information on each line, and its a number made ip of 1-5 digits.  
+We read each line, and add it the total for the current elf.  
+There are blank lines separating the groups of numbers belonging to each elf.  
+We treat the blank lines as our cue to see if the current "total" is bigger than any we've seen before.  
 
 ```python puzzle_01-part_1_jmt.py```
 
 ## Part 2
 [my solution](puzzle_01-part_2_jmt.py)
 
-This part requires us to find the top three totals, so we can no longer keep a single total.
-Here we introduce the idea of a list.  Python lists can contain all sorts of things, here they will just be integers.
-One of the great things about lists is that they can be sorted.
-So we modify the code to add each total to a list, sort the list from biggest to smallest, and then grab the first three
-Lists items are accessed by their number, in square brackets.  
-Indexes start with 0, to the first item is the_list[0], the second the_list[2]
+This part requires us to find the top three totals, so we can no longer keep a single total.  
+Here we introduce the idea of a list.  Python lists can contain all sorts of things, here they will just be integers.  
+One of the great things about lists is that they can be sorted.  
+So we modify the code to add each total to a list, sort the list from biggest to smallest, and then grab the first three.  
+Lists items are accessed by their number, in square brackets.    
+Indexes start with 0, to the first item is the_list[0], the second the_list[2]  
 
 ```python puzzle_01-part_2_jmt.py```
 
 ## Gotchas
 
 Some gotchas to think about for more real world examples:
-It relies on a blank line being present after the last entry, or we might not check the final group
-We aren't doing any error checking on the existence of the file
-We're assuming that any line with text in it can be safely converted to an integer
+- It relies on a blank line being present after the last entry, or we might not check the final group
+- We aren't doing any error checking on the existence of the file
+- We are assuming that any line with text in it can be safely converted to an integer
 
 # Raw text from web site
 
