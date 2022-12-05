@@ -10,7 +10,8 @@ This problem revolves around comparing the members of two groups of letters and 
 The first task is to split each line into two.  
 If we iterate through the items in the first half, and look for it to ocurr in the second half. We have been told that this will only ocurr once for each sack (line of text) so we need only look for that first case.  
 In my code, I split the contents of the rucksack into two, assuming that there are an even number of components.  
-I haven't done so here, but I would normally introduce an assertion here to confirm this is true.  
+I haven't done so here, but I would normally introduce an assertion here to confirm this is true.
+For those new to python, it's worth spendng a little time looking at how  string slicing works, the need for the integer conversions for the indexes in light of the calculated midpoint.
 
 Run with:  
 ```python puzzle_03-part_1_jmt.py```
@@ -18,8 +19,8 @@ Run with:
 ## Part 2
 
 This is a similar problem, finding common letters in longer strings, only this time we have three groups over three lines, instead of two groups being half of a line each.
-We could use a similar algorithm, but this is a good time to introduct the concept of python sets, which can do a lot of the heavy lifting for us.
-
+We could use a similar algorithm, but this is a good time to introduct the concept of python sets, which can do a lot of the heavy lifting for us.  
+Sets an contain various items, but each element of a set must be unique.  If you convert the string of letters "two words" into a list, you would get a list of 9 characters, in the order as shown by default (8 letters and a space).  If the same string was converted into a set, you would only get 7 items in the set {"t", "w" "o", " ", "r", "d", "s"}, the duplicates of "w" and "o" are dropped automatically.
 
 [my solution](puzzle_03-part_2_jmt.py)  
 
@@ -29,6 +30,8 @@ Run with:
 ```python puzzle_03-part_2_jmt.py```
 
 ## Gotchas
+
+There are lots of checks that ought to be done here if the input data was less predictable.  If we go through this one in person we will work through some options for dealing with damaged or malformed data.  
 
 # Raw text from web site
 
