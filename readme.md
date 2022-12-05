@@ -8,7 +8,8 @@ https://adventofcode.com/2022/
 This documentation is meant to assist with using the challenges for educational purposes, probably augmented by real-world sessions.
 Hopefully you've received a message about this and know exactly what it's all about.
 
-You should be able to clone this repo and be able to work on the puzzles without a live internet connection.
+You should be able to clone this repo and be able to work on the puzzles locally without a live internet connection.  
+I have downloaded the datasets into the folder for each puzzle so your dont have to, that's not really a part of the problem, although downloading data from web sites may well be something we get into at smoe point.
 
 If not, you're still welcome to everything here, but please refer to the original site to see what it's all about.
 This is not meant to be a showcase of the most ingenious, elegant or correct solutions, rather it's a resource to introduce python to those without a development background.
@@ -18,5 +19,4 @@ December 2022
 
 ## Puzzle notes pages
 
-[01](Puzzle_01/puzzle_01_notes.md)
-[02](Puzzle_02/puzzle_02_notes.md)
+[01](Puzzle_01/puzzle_01_notes.md) - [02](Puzzle_02/puzzle_02_notes.md) - 
