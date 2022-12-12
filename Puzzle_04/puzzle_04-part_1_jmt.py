@@ -12,20 +12,25 @@ contained_pair_count = 0
 
 with open(INPUT_FILE_NAME, "r") as input_file:
     for each_line in input_file:
-        clean_line = (
-            each_line.strip()
-        )  # This removes any whitepace from both ends,but not the middle
-        pair_of_ranges = clean_line.split(",")
-        range_a = pair_of_ranges[0].split(
-            "-"
-        )  # The 1st of the previous list, split into another list
-        range_b = pair_of_ranges[1].split(
-            "-"
-        )  # The 2nd of the previous list, split into another list
+        clean_line = each_line.strip()  # Remove whitespace
+        pair_of_ranges = clean_line.split(",")  # Get A-B and X-Y as two strings
 
-        if int(range_a[0]) >= int(range_b[0]) and int(range_a[1]) <= int(range_b[1]):
-            contained_pair_count += 1
-        elif int(range_b[0]) >= int(range_a[0]) and int(range_b[1]) <= int(range_a[1]):
-            contained_pair_count += 1
+        # Split each of these strings "A-B" and "X-Y" into a list of two strings
+        # Note that they still are strings, to do numeric comparison we have more to do
+
+        list_left = pair_of_ranges[0].split("-")  # Now have a list ["A", "B"]
+        list_right = pair_of_ranges[1].split("-")  # Now have a list ["X", "Y"]
+
+        # We could (and I did initially) fit the integter conversion into our logical
+        # if statements, but it's more readable to do it as a separate step
+
+        range_a = [int(list_left[0]), int(list_left[1])]  # Convert to integers
+        range_b = [int(list_right[0]), int(list_right[1])]  # ["1", "2"] becomes [1, 2]
+
+        # For [A, B] and [X, Y] we now do our checks to see which is inside which, if any
+        if range_a[0] >= range_b[0] and range_a[1] <= range_b[1]:
+            contained_pair_count += 1  # [A, B] is inside [X, Y]
+        elif range_b[0] >= range_a[0] and range_b[1] <= range_a[1]:
+            contained_pair_count += 1  # [X, Y] is inside [A, B]
 
 print(f"Result is: {contained_pair_count}")
