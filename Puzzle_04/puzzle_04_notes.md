@@ -8,7 +8,7 @@
 
 The source data for this one contains text in two columns separated by a comma,  
 and each column is a range from and to, although they could be the same number  
-such as 23-23 but generally look something like 7-21  
+such as "23-23, 18-18" but generally look something like "7-21, 13-16"
 
 We'll split the input using the comma, and then split each one again using the dash,  
 to get an upper and lower range.  We have to find the number of pairs where one   
@@ -20,9 +20,9 @@ Run with:
 ## Part 2
 
 The second part doesn't require any more complicated data processing to get the answers.  
-We prodice the same sets of lists, only this time I've done it using a list comprehension  
+We produce the same sets of lists, only this time I've done it using a list comprehension  
 rather than explicitly assigning members of the list.  If you haven't seen this before or  
-has a play with list comprehensions, don't stress, we'll look at them elsewhere.
+had a play with list comprehensions, don't stress, we'll look at them elsewhere.
 
 To get the solution this time, we simply have to check if either bound (lower or upper)  
 from one pair is "inside" the other.
