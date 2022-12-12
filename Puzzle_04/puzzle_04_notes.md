@@ -19,7 +19,15 @@ Run with:
 
 ## Part 2
 
-TBA
+The second part doesn't require any more complicated data processing to get the answers.  
+We prodice the same sets of lists, only this time I've done it using a list comprehension  
+rather than explicitly assigning members of the list.  If you haven't seen this before or  
+has a play with list comprehensions, don't stress, we'll look at them elsewhere.
+
+To get the solution this time, we simply have to check if either bound (lower or upper)  
+from one pair is "inside" the other.
+
+Again, proper set math would be a little nicer here, but this gets the job done.
 
 [my solution](puzzle_04-part_2_jmt.py)  
 
