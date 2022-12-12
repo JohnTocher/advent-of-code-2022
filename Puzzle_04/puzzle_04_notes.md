@@ -6,13 +6,13 @@
 
 [my solution](puzzle_04-part_1_jmt.py)  
 
-The source data for this one contains text in two columns separated by a comma,
-and each column is a range from and to, although they could be the same number
-such as 23-23 but generally look something like 7-21
+The source data for this one contains text in two columns separated by a comma,  
+and each column is a range from and to, although they could be the same number  
+such as 23-23 but generally look something like 7-21  
 
-We'll split the input using the comma, and then split each one again using the dash,
-to get an upper and lower range.  We have to find the number of pairs where one 
-range is completely inside another. For examle 3-5 is completely inside 3-10.
+We'll split the input using the comma, and then split each one again using the dash,  
+to get an upper and lower range.  We have to find the number of pairs where one   
+range is completely inside another. For examle 3-5 is completely inside 3-10.  
 
 Run with:  
 ```python puzzle_04-part_1_jmt.py```
@@ -24,11 +24,13 @@ TBA
 [my solution](puzzle_04-part_2_jmt.py)  
 
 Run with:  
-```python puzzle_04-part_2_jmt.py```
+```python puzzle_04-part_2_jmt.py``` 
 
 ## Gotchas
+We're assuming the data is nicely formatted, and that for each pair it looks like [lower, upper] 
+Our tests will fail if the ranges are in the other order.  [6, 4] is "inside" [3 ,7] but won't get  
+spotted correctly by our current if logics.  Proper set math would fix this.
 
-TBA  
 
 # Raw text from web site
 
