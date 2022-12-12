@@ -14,6 +14,8 @@ I have downloaded the datasets into the folder for each puzzle so your dont have
 If not, you're still welcome to everything here, but please refer to the original site to see what it's all about.
 This is not meant to be a showcase of the most ingenious, elegant or correct solutions, rather it's a resource to introduce python to those without a development background.
 
+You probably want to start with the .md file in each puzzle subfolder.  
+
 ## What you need
 
 - [Python 3](https://www.python.org/downloads/), pretty much any version beyond 3.6.  If you're on linux (ubuntu, or a raspberry pi), the command to run the scripts will probably be ```python3 filename.py``` rather than ```python filename.py```  
@@ -26,4 +28,4 @@ December 2022
 
 ## Puzzle notes pages
 
-[01](Puzzle_01/puzzle_01_notes.md) - [02](Puzzle_02/puzzle_02_notes.md) - [03](Puzzle_03/puzzle_03_notes.md)  
+[01](Puzzle_01/puzzle_01_notes.md) - [02](Puzzle_02/puzzle_02_notes.md) - [03](Puzzle_03/puzzle_03_notes.md) - [04](Puzzle_04/puzzle_04_notes.md)  
