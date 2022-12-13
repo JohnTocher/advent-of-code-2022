@@ -14,7 +14,7 @@ I have downloaded the datasets into the folder for each puzzle so your dont have
 If not, you're still welcome to everything here, but please refer to the original site to see what it's all about.
 This is not meant to be a showcase of the most ingenious, elegant or correct solutions, rather it's a resource to introduce python to those without a development background.
 
-You probably want to start with the .md file in each puzzle subfolder.  
+You probably want to start with the .md file in each puzzle subfolder.  If folder N isn't here yet and it's already day N+x that's just because I'm slack and/or busy!
 
 ## What you need
 
