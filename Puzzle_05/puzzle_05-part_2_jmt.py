@@ -38,9 +38,8 @@ print(f"Initial state: {stack_state}")
 
 with open(INPUT_FILE_NAME, "r") as input_file:
     for each_line in input_file:
-        clean_line = (
-            each_line.strip()
-        )  # This removes any whitepace from both ends,but not the middle
+        clean_line = each_line.strip()
+        # This removes any whitepace from both ends,but not the middle
         if clean_line.startswith("move"):
 
             # The index of the letter where the word from appears
