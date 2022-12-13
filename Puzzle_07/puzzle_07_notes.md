@@ -23,7 +23,9 @@ Run with:
 
 ## Part 2
 
-TBA
+Assuming you have all the deta correct in part one, this section is not too much extra work.
+We simply have to calculate how much extra disk space we need, and then find the smallest folder 
+at least that big.
 
 [my solution](puzzle_07-part_2_jmt.py)
 

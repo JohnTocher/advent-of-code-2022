@@ -36,12 +36,10 @@ def size_of_folder(folder_name):
 
     sub_folders = folders[folder_name]["folders"]
 
-    # print(f"Calculating size for {folder_name}")
     if sub_folders:
         for each_sub_folder in sub_folders:
             total_size += size_of_folder(each_sub_folder)
 
-    # print(f"Calculating size for {folder_name} - {total_size}")
     return total_size
 
 
@@ -65,7 +63,6 @@ with open(INPUT_FILE_NAME, "r") as input_file:
                         current_dir = f"/{new_dir}"
                     else:
                         current_dir = f"{current_dir}/{new_dir}"
-                print(f"Current dir: {current_dir}")
                 if current_dir not in folders:
                     # No entry for this folder, create it and set defaults
                     # Only necessary in case we never do an "ls" here
@@ -73,9 +70,6 @@ with open(INPUT_FILE_NAME, "r") as input_file:
                     sub_folder_data["size"] = 0
                     sub_folder_data["folders"] = list()
                     folders[current_dir] = sub_folder_data
-                    print(f"Line: {line_num:04} Created folder: {current_dir}")
-                else:
-                    print(f"Line: {line_num:04} Revisiting: {current_dir}")
 
             else:  # This should be the "ls" command
                 assert cmd_part[0:2] == "ls", f"Unexpected command: {cmd_part}"
@@ -84,7 +78,6 @@ with open(INPUT_FILE_NAME, "r") as input_file:
                 sub_folder_data["size"] = 0
                 sub_folder_data["folders"] = list()
                 current_folder_data = sub_folder_data
-                print(f"Line: {line_num:04} - ls cmd for {current_dir}")
 
         else:  # Not a command, must be listing output
 
@@ -94,7 +87,6 @@ with open(INPUT_FILE_NAME, "r") as input_file:
                     this_dir = f"/{clean_line[4:]}"
                 else:
                     this_dir = f"{current_dir}/{clean_line[4:]}"
-                print(f"Line: {line_num:04} - dir  added - {this_dir}")
                 new_folders = [
                     each_folder for each_folder in current_folder_data["folders"]
                 ]
@@ -107,23 +99,32 @@ with open(INPUT_FILE_NAME, "r") as input_file:
                 size_value = int(size_parts[0])
                 file_name = size_parts[1]
                 current_folder_data["size"] = current_folder_data["size"] + size_value
-                print(f"Line: {line_num:04} - file added - {file_name}")
 
             new_folder_data = dict()
             new_folder_data["size"] = current_folder_data["size"]
             new_folder_data["folders"] = current_folder_data["folders"]
 
             folders[current_dir] = new_folder_data
-            print(f"Updated with: {new_folder_data}")
 
 # Have read the folders
 
-total_under_limit = 0
+total_space = 70000000
+required_space = 30000000
+current_usage = size_of_folder("/")
+current_free = total_space - current_usage
+
+print(f"Current usage is: {current_usage} leaving {current_free}")
+target_size = required_space - current_free
+print(f"Target size is at least: {target_size}")
+
+best_folder = "Not found"
+current_min_size = current_usage  # The size of the root folder is worst case!
+
 for folder_name, folder_data in folders.items():
     this_size = size_of_folder(folder_name)
-    if this_size <= 100000:
-        total_under_limit += this_size
+    if this_size >= target_size:
+        if this_size < current_min_size:
+            current_min_size = this_size
+            best_folder = folder_name
 
-    # print(f"Folder: {folder_name} size is {size_of_folder(folder_name)}")
-
-print(f"Total size of folders under limit is {total_under_limit}")
+print(f"Smallest folder large enough is {best_folder} with size {current_min_size}")
