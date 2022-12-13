@@ -1,6 +1,6 @@
 """ Advent of code 2022 - Puzzle nn
 
-    https://adventofcode.com/2022/day/nn
+    https://adventofcode.com/2022/day/n
 
     John Tocher     
     Solution to puzzle nn part 2
