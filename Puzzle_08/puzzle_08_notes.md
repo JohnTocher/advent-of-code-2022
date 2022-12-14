@@ -31,7 +31,17 @@ Run with:
 
 ## Part 2
 
-TBA
+This part requires calculating a new metric for each tree, called aa view score, based on how far in each  
+direction you can see.  The algorithm chosen for part 1 can be tweaked to achive this.  It;s often worth 
+goin back to a simpler test data set when making significant changes, so might want to use the tiny  
+text file to confirm you can get the results demonstrated in the puzzle discussion.
+
+At first I thought I might have to modify the algorithm to include the trees on the edges, but the score 
+devised is the multiplication of the four view scores, and at least one of them is defined as zero, so  
+the product will zero and obviously not our optimal solution.
+
+I also had to tweak the code that built the list of adjacent trees to make sure it worked from the tree 
+we are testing, out towards the edge.  For two (right and down) this was already the case. 
 
 [my solution](puzzle_08-part_2_jmt.py)
 
@@ -40,7 +50,9 @@ Run with:
 
 ## Gotchas
 
-TBA
+I have assumed the forest is square, calculating the size variable by counting the rows qhwn 
+doing the puzzle input read. 
+It wouldn't take much to fix it for rectangular forests.
 
 # Raw text from web site
 
@@ -76,3 +88,46 @@ With 16 trees visible on the edge and another 5 visible in the interior, a total
 
 Consider your map; how many trees are visible from outside the grid?
 
+Your puzzle answer was 1679.
+
+--- Part Two ---
+
+Content with the amount of tree cover available, the Elves just need to know the best spot to build their tree house: they would like to be able to see a lot of trees.
+
+To measure the viewing distance from a given tree, look up, down, left, and right from that tree; stop if you reach an edge or at the first tree that is the same height or taller than the tree under consideration. (If a tree is right on the edge, at least one of its viewing distances will be zero.)
+
+The Elves don't care about distant trees taller than those found by the rules above; the proposed tree house has large eaves to keep it dry, so they wouldn't be able to see higher than the tree house anyway.
+
+In the example above, consider the middle 5 in the second row:
+
+30373
+25512
+65332
+33549
+35390
+
+    Looking up, its view is not blocked; it can see 1 tree (of height 3).
+    Looking left, its view is blocked immediately; it can see only 1 tree (of height 5, right next to it).
+    Looking right, its view is not blocked; it can see 2 trees.
+    Looking down, its view is blocked eventually; it can see 2 trees (one of height 3, then the tree of height 5 that blocks its view).
+
+A tree's scenic score is found by multiplying together its viewing distance in each of the four directions. For this tree, this is 4 (found by multiplying 1 * 1 * 2 * 2).
+
+However, you can do even better: consider the tree of height 5 in the middle of the fourth row:
+
+30373
+25512
+65332
+33549
+35390
+
+    Looking up, its view is blocked at 2 trees (by another tree with a height of 5).
+    Looking left, its view is not blocked; it can see 2 trees.
+    Looking down, its view is also not blocked; it can see 1 tree.
+    Looking right, its view is blocked at 2 trees (by a massive tree of height 9).
+
+This tree's scenic score is 8 (2 * 2 * 1 * 2); this is the ideal spot for the tree house.
+
+Consider each tree on your map. What is the highest scenic score possible for any tree?
+
+Your puzzle answer was 536625.
