@@ -9,12 +9,22 @@
 This one is interesting, and doesn't seem to complex in general terms.  Nothing revolutionary or 
 particularly clever comes to mind.  When that's the case, I tend to start with a brute force 
 approach and see if any shrotcuts appear while I'm coding.  Even average comouters are typcially 
-so fast now that it's nearly impossible to tell an efficient solotion from a weaker one for all but 
+so fast now that it's nearly impossible to tell an efficient solution from a weaker one for all but 
 the biggest of data sets.
 
 Start coding and see what happens.  If you want to start smaller, I also downloaded the tiny, 5 x 5 
 forest grid to practice on.  That's often worth doing just so that your print debug lines are a bit 
 more manageble on the screen.  It's called 'puzzle_08_input_tiny.txt'
+
+Ny algorithm was made up of the following:
+- Iterate over the row and column indexes, create a tuple (col, row) to use as look up values (keys)  
+for the tree_heights data (dictionary)
+- For each tree point, traverse up and down, left and right, to the edges and in each case make a list of 
+those points.
+- Pass the tree coordinates and the list of adjacent co-ordinates to a function which checks visibility and
+returns False if the view of the tree from the direction supplied, is blocked.
+- Repeat this for the other three directions
+- If all four directions show no visibility, then that tree is hidden from all edges.
 
 Run with:
 ```python puzzle_08-part_1_jmt.py```
