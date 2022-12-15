@@ -3,7 +3,7 @@
     https://adventofcode.com/2022/day/9
 
     John Tocher
-    Solution to puzzle 09 part 1
+    Solution to puzzle 09 part 2A - sigh, alternate version coz I forgot to git push from home
 """
 
 INPUT_FILE_NAME = "puzzle_09_input_tiny.txt"
