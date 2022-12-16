@@ -53,12 +53,16 @@ def calc_move_values(head_pos, tail_pos):
     if abs(dx) == 2:  # Two apart in x
         if dy == 0:  # Same column
             return (int(dx / 2), 0)
+        elif abs(dy) == 2:
+            return (int(dx / 2), int(dy / 2))
         else:  # Different columns - move diagonal
             return (int(dx / 2), dy)
 
     if abs(dy) == 2:  # Two apart in Y
         if dx == 0:  # Same row
             return (0, int(dy / 2))
+        elif abs(dx) == 2:
+            return (int(dx / 2), int(dy / 2))
         else:
             return (dx, int(dy / 2))
 
@@ -107,13 +111,6 @@ with open(INPUT_FILE_NAME, "r") as input_file:
         print(f"Going {which_dir} for {hops_to_do} steps")
         for hop_count in range(0, hops_to_do):
             move_values = get_move_values(which_dir)
-
-            # head_pos = move_point(head_pos, move_values)
-            # tail_shift = calc_move_values(head_pos, tail_pos)
-            # tail_pos = move_point(tail_pos, tail_shift)
-            # tail_history.append(tail_pos)
-            # print(f"After {which_dir} head is at {head_pos}, tail at {tail_pos}")
-
             rope_nodes[0] = move_point(rope_nodes[0], move_values)
             for next_node in range(1, 10):
                 tail_shift = calc_move_values(
@@ -121,8 +118,7 @@ with open(INPUT_FILE_NAME, "r") as input_file:
                 )
                 rope_nodes[next_node] = move_point(rope_nodes[next_node], tail_shift)
             tail_history.append(rope_nodes[9])
-            print("")
-            print_grid(rope_nodes, 5, 4)
+            # print_grid(rope_nodes, 5, 4)   # print a grid similar to the web page
 
 tail_positions = len(set(tail_history))
 
