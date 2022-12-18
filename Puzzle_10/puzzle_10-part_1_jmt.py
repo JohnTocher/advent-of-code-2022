@@ -6,7 +6,7 @@
     Solution to puzzle 10 part 1
 """
 
-INPUT_FILE_NAME = "puzzle_10_input.txt"
+INPUT_FILE_NAME = "puzzle_10_input_larger.txt"
 
 reg_x = 1  # Iitialise our register
 cycle_count = 1

@@ -22,7 +22,11 @@ Run with:
 
 ## Part 2
 
-TBA
+The wording on this one was a little inconsistent, and again the off-by-one possibilities are many! 
+Pixel positions are discussed as zero-based, while the first cycle is 1, not zero.
+
+Also see my notes on the range statement I was used to check the bounds of the sprite.
+Once I sorted that out, the algorihm worked as expected, and the display rendered nicely.
 
 [my solution](puzzle_10-part_2_jmt.py)
 
@@ -30,6 +34,14 @@ Run with:
 ```python puzzle_10-part_2_jmt.py```
 
 ## Gotchas
+
+My initial check for the pixel position being inside the sprite was to check: 
+pixel_pos in range(register -1, register +1)
+
+for example with a register value of 5, the sprite cover positiosn 4,5,6
+so a pixel position of 6 should be covered, but for python, the range(4,6) is doesn't include the 
+boundary value of 6, much like in a for loop. It might be just me, but this is the first time a range 
+statement threw me like that.
 
 TBA
 
