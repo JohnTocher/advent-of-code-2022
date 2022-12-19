@@ -7,12 +7,16 @@
 [my solution](puzzle_11-part_1_jmt.py)
 
 This one, like one of the earlier puzzles has quite a bit of work in setting up the initial conditions.
-There was probably as much work in this as in the whole of some of the previous puzzles.
+There was probably as much work in this as in the whole of some of the previous puzzles.  
 In this case I've decided to handle it programatically, as this code may be useful introduction to the 
 use of nested dictionaries.  Functionally it would probably be sensible ot just hard code the initial 
 Monkey stats, there are only 7 of them in the problem input, although at this point I don't know what 
 part 2 will bring.
 
+If you don't enjoy building parsers, you're probably better off just creating the input structures 
+manually, they don't change from part 1 to 2, and generally much require much re-thinking between the 
+parts either.  For my code (which I am definately not optimizing for size) the input parsing was more 
+than a third of the toatal code
 
 Run with:
 ```python puzzle_11-part_1_jmt.py```
