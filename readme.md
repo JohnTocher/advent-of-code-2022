@@ -23,11 +23,11 @@ You probably want to start with the .md file in each puzzle subfolder.  If folde
 
 *Note:* You probably *can't* do this on a vanilla SOE box, although if you really want to, come and see me and we can sort that out too.  Getting python to run pretty much anywhere else should be straightforward, but again reach out if you run into any grief.
 
-Current status: Completed puzzles 1 through 5
+Current status: Completed puzzles 1 through 11
 
 John Tocher  
 December 2022
 
 ## Puzzle notes pages
 
-[01](Puzzle_01/puzzle_01_notes.md) - [02](Puzzle_02/puzzle_02_notes.md) - [03](Puzzle_03/puzzle_03_notes.md) - [04](Puzzle_04/puzzle_04_notes.md) - [05](Puzzle_05/puzzle_05_notes.md)  
+[01](Puzzle_01/puzzle_01_notes.md) - [02](Puzzle_02/puzzle_02_notes.md) - [03](Puzzle_03/puzzle_03_notes.md) - [04](Puzzle_04/puzzle_04_notes.md) - [05](Puzzle_05/puzzle_05_notes.md) - [06](Puzzle_06/puzzle_06_notes.md) - [07](Puzzle_07/puzzle_07_notes.md) - [08](Puzzle_08/puzzle_08_notes.md) - [09](Puzzle_09/puzzle_09_notes.md) - [10](Puzzle_10/puzzle_10_notes.md) - [11](Puzzle_11/puzzle_11_notes.md) -
