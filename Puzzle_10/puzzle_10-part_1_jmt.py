@@ -15,7 +15,7 @@ cycle_record = dict()
 
 with open(INPUT_FILE_NAME, "r") as input_file:
     for each_line in input_file:
-        instruction = clean_line = each_line.strip()  # Remove whitespace
+        instruction = each_line.strip()  # Remove whitespace
         # print(f"Cycle count {cycle_count:04} : x:{reg_x}")
         if instruction == "noop":
             cycle_record[cycle_count] = reg_x
