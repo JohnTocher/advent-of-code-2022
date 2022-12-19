@@ -4,7 +4,7 @@
     and then doing a search and replace on 'nn' for the puzzle number
 """
 
-PUZZLE_TO_GENERATE = 11
+PUZZLE_TO_GENERATE = 12
 
 TEMPLATE_FILES = [
     "puzzle_nn_input.txt",

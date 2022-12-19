@@ -1,4 +1,4 @@
-# Advent of Code - Puzzle 11 notes
+# Advent of Code - Puzzle 11 notes - Monkey in the Middle
 
 [Official link](https://adventofcode.com/2022/day/11) or back to [main readme](../readme.md)
 
