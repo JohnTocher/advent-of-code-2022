@@ -6,7 +6,7 @@
 
 [my solution](puzzle_11-part_1_jmt.py)
 
-This one, like one of the earlier npuzzles has quite a bit of work in setting up the initial conditions.
+This one, like one of the earlier puzzles has quite a bit of work in setting up the initial conditions.
 There was probably as much work in this as in the whole of some of the previous puzzles.
 In this case I've decided to handle it programatically, as this code may be useful introduction to the 
 use of nested dictionaries.  Functionally it would probably be sensible ot just hard code the initial 
